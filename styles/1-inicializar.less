@@ -31,7 +31,7 @@ main {
         transform: translate(-50%);
       }
 
-      span {
+      .bem-vindo {
         position: absolute;
         top: 160px;
         left: 50%;
@@ -82,10 +82,11 @@ main {
           animation-fill-mode: both;
         }
 
-        .numero {
+        .porcentagem {
           position: absolute;
           top: 58px;
-          left: 65px;
+          left: 18%;
+          transform: translate(-50%);
           font-size: 24px;
           font-weight: 500;
           z-index: 90;
@@ -272,7 +273,7 @@ main {
         left: 50%;
         transform: translate(-50%);
         opacity: 0;
-        filter: drop-shadow(0px 0px 10px rgb(0, 247, 255));
+        filter: drop-shadow(0px 0px 10px var(--ciano));
       
         &::after {
           content: "escaneando";
@@ -287,7 +288,7 @@ main {
         }
       
         svg {
-          filter: drop-shadow(0px 0px 10px #3fefef) drop-shadow(0px 0px 50px #3fefef);
+          filter: drop-shadow(0px 0px 10px var(--ciano)) drop-shadow(0px 0px 50px var(--ciano));
         }
       
         path {
@@ -316,6 +317,7 @@ main {
           left: 0;
         }
         span {
+          color: white;
           width: 100%;
           font-size: 20px;
           text-align: center;
@@ -325,7 +327,7 @@ main {
           left: 50%;
           transform: translate(-50%, -50%);
           display: block;
-          text-shadow: 1px 1px 2px #3fefef;
+          text-shadow: 1px 1px 2px var(--ciano);
         }
       }
     }
@@ -915,7 +917,7 @@ main {
           height: 45px;
         }
 
-        span {
+        .bem-vindo {
           text-align: center;
           
         }
